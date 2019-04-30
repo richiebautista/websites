@@ -1,0 +1,150 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    background: linear-gradient(to top, #ad5389, #3c1053);
+}
+header{
+    width: 220px;
+    margin:0 auto;
+}
+
+.mero{
+    text-align: center;
+    margin:0 auto;
+  box-shadow: 1px 1px 5px 2px rgb( 86, 44, 114);
+    background-color:rgba(232, 175, 218,0.2);
+}
+
+img.prueba{
+    margin-top:20px;
+    max-width:100%;
+    height: 75%;
+}
+
+.contenido{
+    width: 700px;
+    margin:0 auto;
+}
+
+h2,p{
+    text-align: center;  
+    color:white;
+    text-transform: uppercase;
+   
+}
+p{
+    font-size:25px;
+    color:white;
+}
+
+strong{
+    color:yellow;
+    font-size:35px;
+}
+.contenido::after{
+    content: '';
+    display:block;
+    clear:both;
+}
+.contenido article.izquierdo{
+    width: 40%;
+    float:left;
+    margin-bottom: 40px;
+    margin-left:10px;
+    
+}
+.contenido article.derecho{
+    width:40%;
+    float:right;
+    margin-bottom: 40px;
+    margin-right:10px;
+}
+
+
+article img{
+    margin-top:25px;
+    border: 6px solid #3c1053;
+}
+article img:hover{
+    border-color:#ad5389;
+}
+a{
+    text-decoration: none;
+    background-color: yellow;
+    padding:8px 16px;
+    text-transform: uppercase;
+}
+
+a:hover{
+    background-color: #493240;
+    color:yellow
+}
+
+/*Responsive*/
+
+/*Mobile first*/
+@media only screen and (max-width: 768px){
+    body{
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    }
+  
+    div img {
+        max-width: 100%;
+        height: auto;
+      }
+   
+   .contenido{
+    max-width: 475px;
+    margin: 0 auto;
+  
+} 
+
+    div .mero{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .contenido article.izquierdo{
+        width: 60%;
+        float: left;
+       margin-bottom: 20px;
+        margin-left:100px;
+        height: auto;
+    }
+    
+    .contenido article.derecho{
+        width:60%;
+        float: left;
+        margin-bottom: 20px;
+        margin-left:100px; 
+        margin-top: -20px;
+        height: auto;
+    }
+    article img{
+        width:450px;
+        height: auto;
+    }
+
+    a{
+        margin-left: 5px;
+    }
+    p{
+        margin:-2px -82px 10px -68px;
+    }
+   
+}
+
+/*Desktop*/
+@media only screen and (min-width: 769px){
+
+    div.mero{
+        width:900px;
+    }
+   
+ 
+}
